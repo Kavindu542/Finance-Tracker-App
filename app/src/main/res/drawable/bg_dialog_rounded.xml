@@ -1,0 +1,13 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+android:shape="rectangle">
+
+<solid android:color="@android:color/white" /> <!-- or your background color -->
+
+<corners android:radius="24dp" /> <!-- increase for smoother curve -->
+
+<padding
+    android:left="10dp"
+    android:top="10dp"
+    android:right="10dp"
+    android:bottom="10dp"/>
+</shape>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Financeapp.Splash" parent="Theme.SplashScreen">
+        <!-- Dark background similar to Uber -->
+        <item name="android:windowSplashScreenBackground">@android:color/black</item>
+        <!-- Use the animated vector drawable -->
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/avd_logo</item>
+        <!-- Animation duration -->
+        <item name="android:windowSplashScreenAnimationDuration">800</item>
+        <!-- Transition to the main theme -->
+        <item name="postSplashScreenTheme">@style/Theme.Financeapp</item>
+    </style>
+</resources>

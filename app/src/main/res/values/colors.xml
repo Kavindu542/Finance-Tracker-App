@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="primary_purple">#800080</color>
+    <color name="light_purple">#DDA445F2</color>
+    <color name="income_green">#008000</color>
+    <color name="expense_red">#FF0000</color>
+    <color name="expense">#fc3c4b</color> <!-- Red for expenses -->
+    <color name="income">#05a76b</color>
+
+    <color name="background_light_gray">#F5F5F5</color>
+    <color name="text_dark">#FFFFFF</color>
+
+    <color name="secondary">#FF000000</color>
+    <color name="primary">#8BC34A</color>
+    <color name="accent">#FFFFFF</color>
+    <color name="gray">#AFAFAF</color>
+    <color name="darkgray">#E03C3B3B</color>
+    <color name="transaprent">#00FFFFFF</color>
+
+    <!-- Custom category colors -->
+    <color name="category_food">#F44336</color> <!-- Deep Orange -->
+    <color name="category_transport">#05C130</color> <!-- Blue -->
+    <color name="category_bills">#3F51B5</color> <!-- Green -->
+    <color name="category_entertainment">#2196F3</color> <!-- Purple -->
+    <color name="category_shopping">#FFC107</color> <!-- Red -->
+    <color name="category_subscription">#9C27B0</color> <!-- Amber -->
+    <color name="category_health">#3F51B5</color> <!-- Indigo -->
+    <color name="category_others">#6CFBE8</color>
+    <color name="darkpurpleicon">#642DF6</color> <!-- Deep Orange -->
+
+    <array name="gradient_background_colors">
+        <item>#FFFFFFFF</item> <!-- White -->
+        <item>#FFFDEB</item>  <!-- Light Cream -->
+        <item>#FFF3E9</item>  <!-- Soft Peach -->
+        <item>#FFEAE5</item>  <!-- Light Pink -->
+    </array>
+
+
+</resources>

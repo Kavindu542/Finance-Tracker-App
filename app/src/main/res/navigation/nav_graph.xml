@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <!-- Home Fragment -->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.financeapp.ui.HomeFragment"
+        android:label="HomeFragment">
+        <action
+            android:id="@+id/action_home_to_addEdit"
+            app:destination="@id/addEditTransactionFragment">
+            <argument
+                android:name="transactionId"
+                app:argType="integer"
+                android:defaultValue="-1" />
+            <argument
+                android:name="type"
+                app:argType="string"
+                android:defaultValue="Expense" />
+        </action>
+        <action
+            android:id="@+id/action_home_to_list"
+            app:destination="@id/transactionListFragment" />
+    </fragment>
+
+    <!-- Transaction List Fragment -->
+    <fragment
+        android:id="@+id/transactionListFragment"
+        android:name="com.example.financeapp.ui.TransactionListFragment"
+        android:label="TransactionListFragment">
+        <action
+            android:id="@+id/action_list_to_addEdit"
+            app:destination="@id/addEditTransactionFragment">
+            <argument
+                android:name="transactionId"
+                app:argType="integer"
+                android:defaultValue="-1" />
+            <argument
+                android:name="type"
+                app:argType="string"
+                android:defaultValue="Expense" />
+        </action>
+    </fragment>
+
+    <!-- Category Analysis Fragment -->
+    <fragment
+        android:id="@+id/categoryAnalysisFragment"
+        android:name="com.example.financeapp.ui.CategoryAnalysisFragment"
+        android:label="CategoryAnalysisFragment" />
+
+    <!-- Settings Fragment -->
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.financeapp.ui.SettingsFragment"
+        android:label="SettingsFragment">
+        <action
+            android:id="@+id/action_settings_to_login"
+            app:destination="@id/loginActivity"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true" />
+    </fragment>
+
+    <!-- Add/Edit Transaction Fragment -->
+    <fragment
+        android:id="@+id/addEditTransactionFragment"
+        android:name="com.example.financeapp.ui.AddEditTransactionFragment"
+        android:label="AddEditTransactionFragment">
+        <argument
+            android:name="transactionId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+        <argument
+            android:name="type"
+            app:argType="string"
+            android:defaultValue="Expense" />
+    </fragment>
+
+    <!-- Login Activity -->
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.financeapp.ui.LoginActivity" />
+</navigation>

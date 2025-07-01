@@ -1,0 +1,37 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group android:name="logo_group">
+        <!-- Top curve of the dollar sign -->
+        <path
+            android:name="top_curve"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="4"
+            android:strokeLineCap="round"
+            android:trimPathStart="0"
+            android:trimPathEnd="1"
+            android:pathData="M54,20 C40,20 40,40 54,40,M54,20 C40,20 40,40 54,40" />
+
+        <!-- Bottom curve of the dollar sign -->
+        <path
+            android:name="bottom_curve"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="4"
+            android:strokeLineCap="round"
+            android:trimPathStart="0"
+            android:trimPathEnd="1"
+            android:pathData="M54,68 C68,68 68,88 56,88" />
+
+        <!-- Vertical line through the dollar sign -->
+        <path
+            android:name="vertical_line"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="4"
+            android:strokeLineCap="round"
+            android:trimPathStart="0"
+            android:trimPathEnd="1"
+            android:pathData="M54,20 V88" />
+    </group>
+</vector>
